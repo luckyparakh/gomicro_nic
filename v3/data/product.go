@@ -39,7 +39,7 @@ func AddProd(p *Product) {
 	productList = append(productList, p)
 }
 func getId() int {
-	return len(productList)
+	return len(productList) + 1
 }
 
 var errProdNotFound = errors.New("Product not found")
